@@ -1,0 +1,143 @@
+/*ボディ*/
+
+body {
+    min-height: 100vh;
+    padding-bottom: 30px;
+
+    background-color: var(--sub-bg);
+}
+
+.add-oshi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    padding: 26px 18px 28px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    background-color: var(--card);
+    box-shadow: var(--card-shadow);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    color: var(--text);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*名前入力*/
+
+.form-group input[type="text"] {
+    width: 100%;
+    min-height: 46px;
+    padding: 0 12px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--small-radius);
+    background-color: var(--sub-bg);
+
+    color: var(--text);
+
+    font: inherit;
+    font-size: 16px;
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: var(--main);
+    background-color: var(--card);
+    box-shadow: 0 0 0 3px rgba(91, 169, 245, 0.14);
+}
+
+/*保存ボタン*/
+
+.save-oshi-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--main-dark)
+        );
+    color: #ffffff;
+    box-shadow: var(--button-shadow);
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.save-oshi-button:active {
+    transform: scale(0.98);
+}
+
+.oshi-image-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+#oshi-preview {
+    width: 96px;
+    height: 96px;
+
+    border: 4px solid var(--card);
+    border-radius: 50%;
+    background-color: var(--sub-bg);
+    box-shadow: 0 7px 20px rgba(47, 109, 181, 0.16);
+
+    object-fit: cover;
+}
+
+.image-select-button {
+    padding: 10px 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background-color: var(--card);
+    color: var(--main-dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.image-select-button:active {
+    transform: scale(0.97);
+}
+
+#oshi-image-input {
+    display: none;
+}

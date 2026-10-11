@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mirune</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!--タイトル表示　「Mirune」-->
+
+        <header class="page-header">
+            <div class="header-space"></div>
+            <h1 class="page-title">Mirune</h1>
+            <div class="header-space"></div>
+
+            <!--通知機能追加予定-->
+
+        </header>
+
+        <main class="page-main">
+            <section class="oshi-section">
+                <h2>推し一覧</h2>
+
+                <!--推し一覧
+                登録した推しを横スクロール形式で表示
+                一番右側の＋ボタンから推しを追加可能
+                -->
+
+                <div class="oshi-list">
+
+                    <!--推しカード-->
+                
+                    <!--追加カード-->
+                    <!--推しを追加する画面に遷移予定-->
+
+                    <div class="oshi-card add-card">
+                        <button class="oshi-button add-button">+</button>
+                        <p class="add-text">追加</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="memory-suggestion" hidden>
+
+    <p class="memory-suggestion-text">
+        過ぎた予定があります✨<br>
+        思い出を残してみませんか？
+    </p>
+
+    <button
+        class="memory-suggestion-button"
+        type="button"
+    >
+        思い出を書く
+    </button>
+
+</section>
+
+            <section class="next-event-section">
+                <p class="next-event-label">✨NEXT EVENT</p>
+
+                <!--選択中の推しの一番直近の予定を表示
+                今後の予定（○件）▶を押すと選択中の推し関連の予定を一覧表示
+                -->
+
+                <div class="next-event-card">
+                    <p class="event-type-label">🎤 LIVE</p>
+                    <div class="next-event-info">
+                        <p class="event-title">イベント名</p>
+                        <p class="event-countdown">あと○日</p>
+                        <p class="event-date">年月日　時間</p>
+                        <p class="event-place"></p>
+                    </div>
+
+                    <hr>
+                    
+                    <button class="upcoming-button">
+                        今後の予定　▶
+                    </button>
+
+                    <!--今後の予定一覧画面に遷移予定-->
+
+                </div>
+            </section>
+
+            <section class="deadline-section">
+                <button class="deadline-toggle">
+                    <span>📌 今週の締切</span>
+                    <span class="toggle-icon" aria-label="締切を折りたたむ">▼</span>
+                </button>
+
+                <!--全推し共通の７日以内の締切
+                ▼ボタンで折り畳み可能にする予定
+                -->
+
+                <div class="deadline-list">
+                    <div class="deadline-card">
+                        <p class="deadline-day">あと○日</p>
+                        <p class="deadline-oshi">推し名</p>
+                        <p class="deadline-title">●●締切</p>
+                    </div>
+                </div>
+            
+
+            </section>
+
+            <section class="calendar-section">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button class="prev-month">◀</button>
+
+                        <span class="current-month">年月</span>
+
+                        <button class="next-month">▶</button>
+
+                    </div>
+
+                    <div class="calendar-weekdays">
+                        <div class="weekday sunday">日</div>
+                        <div class="weekday">月</div>
+                        <div class="weekday">火</div>
+                        <div class="weekday">水</div>
+                        <div class="weekday">木</div>
+                        <div class="weekday">金</div>
+                        <div class="weekday saturday">土</div>
+                    </div>
+
+                    <div class="calendar-days">
+
+                        <!--JavaScriptで以下のようなHTMLを生成
+                        イベントがある日はマークを表示
+                        今日の日付を強調表示-->
+
+                        <!--
+                        <div class="day today has-event" data-date="2026-07-01">
+                            <span class="day-number">1</span>
+                        </div>
+                        -->
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <button class="footer-button memory">
+                <span>📖</span>
+                <p>思い出</p>
+            </button>
+
+            <button class="footer-button add">
+                <span>+</span>
+                <p>追加</p>
+            </button>
+
+            <button class="footer-button setting">
+                <span>⚙</span>
+                <p>設定</p>
+            </button>
+
+            <!--下部メニュー-->
+        <!--Ver2.0
+        <button class="footer-button calendar">
+            <span>📅</span>
+            <p>カレンダー</p>
+        </button>
+    
+        <button class="footer-button diary">
+            <span>📜</span>
+            <p>日記</p>
+        </button>
+        -->
+
+        </footer>
+
+    </div>
+    <script src="javascript/storage.js"></script>
+    <script src="javascript/index.js"></script>
+
+</body>
+
+</html>

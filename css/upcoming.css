@@ -1,0 +1,151 @@
+/* ボディ */
+
+body{
+    min-height: 100vh;
+    padding-bottom: 30px;
+
+    background-color: var(--sub-bg);
+}
+
+/* タイトル */
+
+.upcoming-hero {
+    margin-bottom: 24px;
+}
+
+.upcoming-label {
+    margin: 0 0 8px;
+
+    color: var(--text);
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.upcoming-message {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+    color:var(--sub-text);
+}
+
+/* 一覧 */
+
+.upcoming-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.upcoming-month-title {
+    margin: 24px 0 0;
+    padding-bottom: 10px;
+
+    color:var(--main-dark);
+    border-bottom: 1px solid var(--border);
+
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.upcoming-month-title:first-child {
+    margin-top: 0;
+}
+
+/* 予定カード */
+
+.upcoming-card {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    border:1px solid var(--border);
+    border-radius:var(--card-radius);
+    background:var(--card);
+    box-shadow:var(--card-shadow);
+
+    color: var(--text);
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.upcoming-event-type {
+    display:inline-block;
+    margin: 0 0 22px;
+    padding: 6px 12px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    background:var(--sub-bg);
+    color:var(--main-dark);
+    border-radius:999px;
+}
+
+.upcoming-event-title {
+    width: 100%;
+    margin: 0 0 16px;
+
+    color: var(--text);
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.upcoming-countdown {
+    width: 100%;
+    margin: 0 0 20px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+
+    color:var(--main);
+}
+
+.upcoming-event-date,
+.upcoming-event-place {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color:var(--sub-text);
+}
+
+.upcoming-event-place {
+    margin-top: 6px;
+}
+
+.upcoming-empty {
+    margin: 40px 0;
+    padding: 28px 18px;
+
+    border: 1px dashed var(--border);
+    border-radius: var(--card-radius);
+    background-color: var(--card);
+    color: var(--sub-text);
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    text-align: center;
+
+}

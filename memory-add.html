@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>思い出を書く｜Mirune</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/memory-add.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="page-header">
+
+            <button
+                class="header-back-button"
+                type="button"
+                aria-label="戻る"
+            >
+                ◀
+            </button>
+
+            <h1 class="page-title">思い出を書く</h1>
+
+            <button class="header-save-button" type="submit" form="memory-add-form">
+                保存
+            </button>
+
+        </header>
+
+        <main class="page-main">
+         <div class="memory-add-card">
+
+            <form id="memory-add-form">
+
+                <div class="form-group">
+
+                    <label for="memory-date">
+                        日付
+                    </label>
+
+                    <input
+                        type="date"
+                        id="memory-date"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="memory-oshi">
+                        推し
+                    </label>
+
+                    <select
+                        id="memory-oshi"
+                        required
+                    >
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="memory-title">
+                        タイトル
+                        <span>（任意）</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="memory-title"
+                        placeholder="例：初めてのヨントン"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="memory-text">
+                        メモ
+                    </label>
+
+                    <textarea
+                        id="memory-text"
+                        rows="8"
+                        placeholder="今日の思い出を書いてみよう"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+    <label for="memory-image">
+        写真
+        <span>（任意）</span>
+    </label>
+
+    <input
+        type="file"
+        id="memory-image"
+        accept="image/*"
+    >
+
+</div>
+
+<div
+    class="image-preview-area"
+    id="image-preview-area"
+    hidden
+>
+
+    <p class="preview-label">
+        選択中の写真
+    </p>
+
+    <img
+        id="image-preview"
+        alt="写真プレビュー"
+    >
+
+</div>
+
+            </form>
+         </div>
+
+        </main>
+
+    </div>
+
+    <script src="javascript/memory-add.js"></script>
+
+</body>
+
+</html>

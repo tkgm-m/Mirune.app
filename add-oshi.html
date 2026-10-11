@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>推しを追加 | Mirune</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-oshi.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="page-header">
+
+            <button class="header-back-button"
+                    type="button">
+                ◀
+            </button>
+
+            <h1 class="page-title">推しを追加</h1>
+
+            <div class="header-space"></div>
+
+        </header>
+
+        <main class="page-main">
+
+            <form class="add-oshi-form">
+
+                <div class="form-group">
+                    <div class="oshi-image-add">
+
+                        <img
+                            id="oshi-preview"
+                            src="assets/icons/default.png"
+                            alt="推し画像"
+                        >
+
+                        <label for="oshi-image-input" class="image-select-button">
+                            画像を選択
+                        </label>
+
+                        <input
+                            type="file"
+                            id="oshi-image-input"
+                            accept="image/*"
+                        >
+
+                    </div>
+                    
+                    <label for="oshi-name">
+                        推しの名前
+                    </label>
+
+                    <input
+                        type="text"
+                        id="oshi-name"
+                        placeholder="例：ヨンジェ"
+                        maxlength="20"
+                        required
+                    >
+
+                </div>
+
+                <button
+                    class="save-oshi-button"
+                    type="submit"
+                >
+                    追加する
+                </button>
+
+            </form>
+
+        </main>
+
+    </div>
+
+    <script src="javascript/add-oshi.js"></script>
+
+</body>
+
+</html>

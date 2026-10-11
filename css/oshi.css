@@ -1,0 +1,69 @@
+body {
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.oshi-image-preview {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 32px;
+}
+
+.oshi-preview-image {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+
+    font-size: 16px;
+}
+
+.save-oshi-button {
+    width: 100%;
+
+    margin-top: 28px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 14px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.oshi-error {
+    margin-top: 12px;
+
+    text-align: center;
+    font-size: 14px;
+}

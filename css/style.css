@@ -1,0 +1,161 @@
+/*共通設定*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #ffffff;
+    --sub-bg: #f5faff;
+
+    --main: #5ba9f5;
+    --main-dark: #2f6db5;
+
+    --light-blue: #cfefff;
+
+    --card: #ffffff;
+
+    --text: #294866;
+    --sub-text: #71879b;
+
+    --border: #dcecf8;
+
+    --card-radius: 18px;
+    --small-radius: 12px;
+
+    --card-shadow:
+        0 6px 18px rgba(47,109,181,.09);
+
+    --button-shadow:
+        0 5px 14px rgba(47,109,181,.16);
+}
+
+html{
+    background: var(--sub-bg);
+}
+
+body{
+    margin:0;
+
+    color:var(--text);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+}
+
+button{
+    font:inherit;
+    color:inherit;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/*コンテナ*/
+
+.container{
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+
+    background-color: transparent;
+}
+
+/*共通レイアウト*/
+/*ヘッダー*/
+
+.page-header{
+    display:grid;
+    grid-template-columns:44px 1fr 44px;
+    align-items:center;
+
+    height:64px;
+    padding:0 16px;
+
+    background:rgba(255,255,255,.96);
+    border-bottom:1px solid var(--border);
+    box-shadow:0 4px 16px rgba(47,109,181,.07);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+}
+
+/*タイトル*/
+
+.page-title{
+    margin:0;
+
+    color:var(--main-dark);
+    font-size:20px;
+    font-weight:700;
+
+    text-align:center;
+    white-space:nowrap;
+}
+
+/*戻るボタン*/
+
+.header-back-button{
+    width:44px;
+    height:40px;
+
+    border:none;
+    border-radius:10px;
+    background:none;
+
+    color:var(--main-dark);
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.header-back-button:active{
+    transform:scale(.95);
+}
+
+/*保存ボタン*/
+
+.header-save-button{
+    width:44px;
+    height:40px;
+
+    border:none;
+    border-radius:10px;
+    background:none;
+
+    color:var(--main);
+
+    font-size:14px;
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+.header-save-button:active{
+    transform:scale(.95);
+}
+
+.header-space{
+    width:44px;
+    height:40px;
+}
+
+/* 共通メイン */
+
+.page-main {
+    padding: 16px;
+}

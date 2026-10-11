@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>思い出編集</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/memory-edit.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+        <header class="page-header">
+
+            <button
+                class="header-back-button"
+                type="button"
+            >
+                ◀
+            </button>
+
+            <h1 class="page-title">
+                思い出編集
+            </h1>
+
+            <button
+            class="header-save-button"
+            type="button"
+            id="save-button"
+            >
+                保存
+            </button>
+
+        </header>
+
+        <main class="page-main">
+
+            <div class="memory-edit-form">
+
+                <form id="memory-edit-form">
+
+                    <div class="form-group">
+
+                        <label for="memory-date">
+                            日付
+                        </label>
+
+                        <input
+                            type="date"
+                            id="memory-date"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="memory-oshi">
+                            推し
+                        </label>
+
+                        <select id="memory-oshi">
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="memory-title">
+                            タイトル
+                        </label>
+
+                        <input
+                            type="text"
+                            id="memory-title"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="memory-text">
+                            本文
+                        </label>
+
+                        <textarea
+                            id="memory-text"
+                            rows="8"
+                        ></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+
+        <label for="memory-image">
+            写真
+        </label>
+
+        <input
+            type="file"
+            id="memory-image"
+            accept="image/*"
+    >
+
+</div>
+
+<div
+    class="image-preview-area"
+    id="image-preview-area"
+    hidden
+>
+
+    <p class="preview-label">
+        選択中の写真
+    </p>
+
+    <img
+        id="image-preview"
+        alt="写真プレビュー"
+    >
+
+    <button
+        class="delete-image-button"
+        type="button"
+        id="delete-image-button"
+    >
+        この写真を削除
+    </button>
+
+</div>
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="javascript/memory-edit.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+/* ボディ */
+
+body {
+    min-height: 100vh;
+    padding-bottom: 30px;
+
+    background-color: var(--sub-bg);
+}
+
+
+/* アプリ全体 */
+
+.app {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background-color: var(--bg);
+}
+
+/* 予定一覧 */
+
+.day-event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* 予定1件 */
+
+.day-event-item {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    padding: 16px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+
+    background-color: var(--card);
+    box-shadow: var(--card-shadow);
+
+    color: var(--text);
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.day-event-item:active {
+    transform: scale(0.98);
+}
+
+
+/* 時間 */
+
+.day-event-time {
+    color: var(--main-dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* 予定名 */
+
+.day-event-name {
+    min-width: 0;
+
+    color: var(--text);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

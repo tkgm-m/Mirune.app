@@ -1,0 +1,103 @@
+/*ボディ*/
+body {
+    min-height: 100vh;
+    background-color: var(--sub-bg);
+}
+
+/*項目全体*/
+
+.event-form {
+    width: 100%;
+    padding: 20px 16px 40px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    background-color: var(--card);
+    box-shadow: var(--card-shadow);
+}
+
+.event-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*項目*/
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/*ラベル*/
+
+.form-group label {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*入力欄*/
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 100%;
+    height: 30px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--small-radius);
+    background-color: var(--sub-bg);
+    color: var(--text);
+
+    font: inherit;
+    font-size: 16px;
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 46px;
+    padding: 0 12px;
+}
+
+.form-group textarea {
+    min-height: 110px;
+    padding: 12px;
+
+    line-height: 1.6;
+
+    resize: vertical;
+}
+
+/* 入力中 */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--main);
+
+    background-color: var(--card);
+
+    box-shadow:
+        0 0 0 3px rgba(91, 169, 245, 0.14);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.result-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border: none;
+    background: none;
+}

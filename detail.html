@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>予定の詳細</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="page-header">
+
+            <button class="header-back-button" type="button">
+                ◀
+            </button>
+
+            <h1 class="page-title">
+                予定の詳細
+            </h1>
+
+            <button class="header-save-button" type="submit" form="detail-form">
+                保存
+            </button>
+
+        </header>
+
+        <main class="page-main">
+
+            <section class="detail-content">
+
+    <form id="detail-form">
+
+        <div class="form-group">
+            <label for="oshi-name">推し</label>
+            <select id="oshi-name" required>
+                <option value="">選択してください</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="event-type">イベント種類</label>
+            <select id="event-type" required>
+                <option value="">選択してください</option>
+                <option value="live">ライブ</option>
+                <option value="media">メディア</option>
+                <option value="stream">配信</option>
+                <option value="release">CD・グッズ発売</option>
+                <option value="deadline">応募締切</option>
+                <option value="anniversary">記念日・誕生日</option>
+                <option value="other">その他</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="event-name">イベント名</label>
+            <input type="text" id="event-name">
+        </div>
+
+        <div class="event-datetime">
+
+            <div class="form-group">
+                <label for="event-date">日付</label>
+                <input type="date" id="event-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event-time">時間</label>
+                <input type="time" id="event-time">
+            </div>
+
+        </div>
+
+        <div class="result-group">
+
+            <div class="form-group">
+                <label for="result-date">当落日</label>
+                <input type="date" id="result-date">
+            </div>
+
+            <div class="form-group">
+                <label for="result-time">当落時間</label>
+                <input type="time" id="result-time">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="event-place">場所</label>
+            <input type="text" id="event-place">
+        </div>
+
+        <div class="form-group">
+            <label for="event-memo">メモ</label>
+            <textarea id="event-memo"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="event-notification">通知</label>
+            <select id="event-notification">
+                <option value="none">通知なし</option>
+                <option value="10-minutes">10分前</option>
+                <option value="30-minutes">30分前</option>
+                <option value="1-hour">1時間前</option>
+                <option value="1-day">1日前</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="event-repeat">繰り返し</label>
+            <select id="event-repeat">
+                <option value="none">繰り返さない</option>
+                <option value="daily">毎日</option>
+                <option value="weekly">毎週</option>
+                <option value="monthly">毎月</option>
+                <option value="yearly">毎年</option>
+            </select>
+        </div>
+
+    </form>
+
+</section>
+
+            <div class="detail-actions">
+                <button class="delete-button" type="button">
+                    削除
+                </button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="javascript/storage.js"></script>
+    <script src="javascript/detail.js"></script>
+
+</body>
+</html>

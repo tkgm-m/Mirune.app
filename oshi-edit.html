@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>推し編集 | Mirune</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/oshi-edit.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="page-header">
+
+            <button class="header-back-button">
+                ◀
+            </button>
+
+            <h1 class="page-title">推し編集</h1>
+            <div class="header-space"></div>
+
+        </header>
+
+        <main class="page-main">
+
+            <form id="oshi-edit-form">
+
+                <div class="oshi-image-edit">
+
+                    <img
+                        id="oshi-preview"
+                        src="assets/icons/default.png"
+                        alt="推し画像"
+                    >
+
+                    <label for="oshi-image-input" class="image-select-button">
+                        画像を選択
+                    </label>
+
+                    <input
+                        type="file"
+                        id="oshi-image-input"
+                        accept="image/*"
+                    >
+
+                </div>
+
+                <label for="oshi-name">
+                    推しの名前
+                </label>
+
+                <input
+                    type="text"
+                    id="oshi-name"
+                    required
+                >
+
+                <button type="submit" class="save-button">
+                    保存
+                </button>
+
+                <button type="button" class="delete-oshi-button">
+                推しを削除
+                </button>
+
+            </form>
+
+            <div class="delete-modal" id="delete-modal">
+
+                <div class="delete-modal-content">
+
+                    <p class="delete-modal-title">
+                        推しを削除しますか？
+                    </p>
+
+                    <p class="delete-modal-text">
+                        思い出（登録した予定）は残しますか？
+                    </p>
+
+                    <div class="delete-modal-buttons">
+
+                        <button type="button" id="keep-memories-button">
+                            思い出を残す
+                        </button>
+
+                        <button type="button" id="delete-all-button">
+                            すべて削除
+                        </button>
+
+                    </div>
+
+                    <button type="button" id="cancel-delete-button">
+                        キャンセル
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <script src="javascript/oshi-edit.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+/*ボディ*/
+
+body {
+    min-height: 100vh;
+    padding-bottom: 30px;
+    background-color: var(--sub-bg);
+}
+
+/* アプリ全体 */
+
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background-color: var(--bg);
+}
+
+.memory-detail-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 26px 18px 28px;
+
+    background-color: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+
+    box-shadow: var(--card-shadow);
+}
+
+.memory-date {
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.memory-oshi {
+    display: inline-block;
+    align-self: flex-start;
+
+    margin: 10px 0 0;
+    padding: 6px 12px;
+
+    color: var(--main-dark);
+
+    background-color: var(--sub-bg);
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.memory-title {
+    margin: 22px 0 0;
+
+    color: var(--text);
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+.memory-image {
+    display: block;
+
+    width: 100%;
+    max-height: 400px;
+
+    margin-top: 20px;
+
+    object-fit: contain;
+
+    background-color: var(--sub-bg);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.memory-text {
+    min-height: 80px;
+
+    margin: 20px 0 0;
+    padding: 16px;
+
+    color: var(--text);
+
+    background-color: var(--sub-bg);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.edit-button {
+    width: 100%;
+
+    margin-top: 28px;
+    padding: 15px 16px;
+
+    color: #fff;
+
+    background: linear-gradient(
+        135deg,
+        var(--main),
+        var(--main-dark)
+    );
+
+    border: none;
+    border-radius: 14px;
+
+    box-shadow: var(--button-shadow);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.edit-button:active {
+    transform: scale(0.98);
+}
+
+/* データ削除ボタン */
+
+.delete-button {
+    width: 100%;
+    padding: 16px;
+
+    border:1px solid #efb8bd;
+    border-radius:14px;
+    background:#fff5f6;
+    color:#d65c68;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:
+        transform var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.delete-button:active{
+
+    transform:scale(.98);
+
+}
+
+.memory-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-height: 400px;
+
+    margin-top: 16px;
+
+    object-fit: contain;
+
+}
+
+[hidden] {
+
+    display: none !important;
+
+}

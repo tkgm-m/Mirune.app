@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>推しを追加</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/oshi.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="page-header">
+            <button class="header-back-button">◀</button>
+            <h1 class="page-title">推しを追加</h1>
+            <div class="header-space"></div>
+        </header>
+
+        <main class="page-main">
+
+            <div class="oshi-image-preview">
+                <img
+                    src="assets/icons/default.png"
+                    alt="推しの画像"
+                    class="oshi-preview-image"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="oshi-name">推しの名前</label>
+
+                <input
+                    type="text"
+                    id="oshi-name"
+                    placeholder="例：TWS"
+                    maxlength="20"
+                >
+            </div>
+
+            <button class="save-oshi-button">
+                保存する
+            </button>
+
+            <p class="oshi-error"></p>
+
+        </main>
+
+    </div>
+
+    <script src="javascript/oshi.js"></script>
+
+</body>
+</html>

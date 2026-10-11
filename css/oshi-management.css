@@ -1,0 +1,212 @@
+/* ボディ */
+
+body {
+    min-height: 100vh;
+    padding-bottom: 30px;
+
+    background-color: var(--sub-bg);
+}
+
+/* 設定項目 */
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 60px;
+
+    margin-bottom: 16px;
+    padding: 18px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+
+    background-color: var(--card);
+
+    box-shadow: var(--card-shadow);
+
+    color: var(--text);
+
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.setting-item:active {
+    transform: scale(0.98);
+}
+
+
+/* 矢印 */
+
+.setting-arrow {
+    color: var(--main-dark);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.setting-item:active .setting-arrow {
+    transform: translateX(2px);
+}
+
+/*メイン*/
+
+main {
+    padding: 20px;
+}
+
+/*推し一覧*/
+
+#oshi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.oshi-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 78px;
+    padding: 14px 16px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    background-color: var(--card);
+    box-shadow: var(--card-shadow);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+.oshi-item:active {
+    transform: scale(0.98);
+}
+
+
+.oshi-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 0;
+}
+
+/*推し画像*/
+
+.oshi-image {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+
+    border: 3px solid var(--card);
+    border-radius: 50%;
+    background-color: var(--sub-bg);
+    box-shadow:  0 4px 12px rgba(47, 109, 181, 0.14);
+
+    object-fit: cover;
+}
+
+.oshi-name {
+    overflow: hidden;
+
+    color: var(--text);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.arrow {
+    flex-shrink: 0;
+    margin-left: 12px;
+
+    color: var(--main);
+
+    font-size: 22px;
+    line-height: 1;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+/*推し追加ボタン*/
+
+#add-oshi-button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 14px;
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--main-dark)
+        );
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    box-shadow: var(--button-shadow);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+
+}
+
+#add-oshi-button:active {
+    transform:
+        translateY(1px)
+        scale(0.98);
+}
+
+.oshi-empty {
+    margin: 40px 0;
+    padding: 28px 20px;
+
+    border: 1px dashed var(--border);
+    border-radius: var(--card-radius);
+
+    background-color: rgba(255, 255, 255, 0.65);
+
+    color: var(--sub-text);
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    text-align: center;
+}

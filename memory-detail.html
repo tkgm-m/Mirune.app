@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>思い出</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/memory-detail.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <header class="page-header">
+
+        <button class="header-back-button" type="button">
+            ◀
+        </button>
+
+        <h1 class="page-title">思い出</h1>
+
+        <div class="header-space"></div>
+
+    </header>
+
+    <main class="page-main">
+
+        <div class="memory-detail-card">
+
+            <p class="memory-date"></p>
+
+            <p class="memory-oshi"></p>
+
+            <h2 class="memory-title"></h2>
+
+            <img
+                class="memory-image"
+                alt="思い出の写真"
+                hidden
+            >
+
+            <p class="memory-text"></p>
+
+            <button class="edit-button">
+                編集
+            </button>
+
+            <button
+                class="delete-button"
+                type="button"
+            >
+                削除
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="javascript/memory-detail.js"></script>
+
+</body>
+</html>
